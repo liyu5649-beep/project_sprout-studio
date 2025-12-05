@@ -46,7 +46,8 @@
     flex-direction:column;
     gap:48px;
     color:#166B12;
-    margin-right:5%;
+    margin-left:50%;
+    margin-right: 5%;
 }
 
 .text-spacing{
@@ -85,6 +86,10 @@
     border-radius:8px;
     background-color:#166B12;
     cursor:pointer;
+}
+.arrowPng{
+    width:"18px"; height:"18px";
+    margin:4px 8px 0 0;
 }
 .switch{
     position:absolute;
@@ -273,7 +278,7 @@
         padding-bottom:10px;
     }
 }
-@media(max-width:768px){
+@media(max-width:700px){
     .navbar{
         margin:13px 32px 13px 32px;
     }
@@ -397,5 +402,30 @@
         width:8px;
         height:8px;
         margin:4px 4px 0 0;
+    }
+}
+
+@media(max-width: 400px){
+    .logo{width: 150px; height: auto;}
+    .banner-header .more{
+        font-size:4px;
+        width:35px;
+        padding:4px;
+    }
+    .banner-header{
+        gap:8px;
+    }
+    .banner-header .more .arrowPng{
+        margin: 4px 4px 0 0;
+    }
+    .switch{
+        gap:12px;
+        bottom:8px;
+        padding:4px 8px;
+    }
+    .switch img {
+        width: 4px;
+        height: 4px;
+        margin-right:0px;
     }
 }
