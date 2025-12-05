@@ -428,4 +428,7 @@
         height: 4px;
         margin-right:0px;
     }
+    .introduce{
+        gap:24px;
+    }
 }
