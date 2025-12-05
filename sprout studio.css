@@ -406,6 +406,9 @@
 }
 
 @media(max-width: 400px){
+    .text-B40{
+        font-size:14px;
+    }
     .logo{width: 150px; height: auto;}
     .banner-header .more{
         font-size:4px;
@@ -429,6 +432,6 @@
         margin-right:0px;
     }
     .introduce{
-        gap:24px;
+        gap:16px;
     }
 }
