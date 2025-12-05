@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>發芽工作室網站</title>
+        <link rel="stylesheet" type="text/css" href="sprout studio.css">
+    </head>
+    <body>
+        <!-- 導覽列 -->
+        <header class="navbar">
+            <img src="logo.png" />
+            <nav class="desktop-menu">
+                <div class="item">設計作品</div>
+                <div class="item">服務項目</div>
+                <div class="item">關於我們</div>
+                <div class="item">聯絡我們</div>
+            </nav>
+            <div onclick="menuClick();" id="menuP" class="menu-picture">
+                <img src="menu.svg" width="30" height="30" />
+            </div>
+            <nav id="menuI" style="display:none;" class="mobile-menu">
+                <img src="close.png" width="16" height="16" onclick="closeClick();" style="cursor:pointer;"/>
+                <div class="item">設計作品</div><hr/>
+                <div class="item">服務項目</div><hr/>
+                <div class="item">關於我們</div><hr/>
+                <div class="item">聯絡我們</div>
+            </nav>
+        </header>
+        <!-- Banner -->
+        <section class="banner">
+            <img src="Banner.png" width="100%" height="100%" id="banner"/>
+            <img src="Banner2.png" width="100%" height="100%" id="banner2" style="display:none;"/>
+
+            <header class="banner-header">
+            <div class="text-spacing">
+                <div class="text-B40">打造專屬你的視覺識別</div>
+                <div class="text-20">我們專注於品牌設計、網頁設計與視覺策略，讓每一個創意都有價值</div>
+            </div>
+            <div onmousedown="down(this);" onmouseup="up(this);" class="more">
+                <img src="arrow.png" width="18px" height="18px" style="margin:4px 8px 0 0;" />
+                了解更多
+            </div>
+            </header>
+
+            <div id="switch" class="switch">
+                <img src="dot-full.png" onclick="switchBanner(1);">
+                <img src="dot.png" onclick="switchBanner(2);">
+            </div>
+        </section>
+        <!-- 服務特色/說明 -->
+        <section>
+            <header class="feature">
+                <div class="text-B36">我們的設計，不只是漂亮，更有策略</div>
+                <div class="text-20">提供全方位的設計解決方案，從品牌建立到數位體驗</div>
+            </header>
+            <section class="introduce">
+                <figcaption class="obj"><img src="Group 3.png">
+                    <div class="text-B24">客製合作模式</div>
+                    <div class="text-16">沒有制式模板，依照你的品牌階段與目標，量身打造設計方案。</div>
+                </figcaption>
+                <figcaption class="obj"><img src="Group 5.png">
+                    <div class="text-B24">跨領域整合</div>
+                    <div class="text-16">結合品牌、網頁、社群視覺等多元設計服務，讓風格與體驗一致性發展。</div>
+                </figcaption>
+                <figcaption class="obj"><img src="Group 8.png">
+                    <div class="text-B24">高效溝通</div>
+                    <div class="text-16">使用專業專案管理工具，確保每一階段雙方都能清楚掌握與即時調整。</div>
+                </figcaption>
+            </section>
+        </section>
+        <!-- 介紹 -->
+        <section class="project-all">
+            <header class="feature" style="color:#ffffff;">
+                <div class="text-B36">量身打造的設計策略</div>
+                <div class="text-20">根據產業與客戶目標，提供最適合的設計提案</div>
+            </header>
+            <figcaption class="pro">
+                <img src="Rectangle 4.png" width="50%">
+                <span class="pro-text">
+                    <div class="text-B24">新創品牌｜建立品牌認知</div>
+                    <ul class="text-20">
+                        <li>建立品牌識別系統（ 色彩 / 字體 / 延伸應用）</li>
+                        <li>明確品牌核心與溝通語調</li>
+                    </ul>
+                </span>
+            </figcaption>
+            <figcaption class="pro-reverse">
+                <img src="Rectangle 5.png" width="50%">
+                <span class="pro-text">
+                    <div class="text-B24">電商設計｜提升轉換率</div>
+                    <ul class="text-20">
+                        <li>視覺一致性的品牌調性設計</li>
+                        <li>強化消費動機與信任感，提升轉單率</li>
+                    </ul>
+                </span>
+            </figcaption>
+            <figcaption class="pro">
+                <img src="Rectangle 6.png" width="50%">
+                <span class="pro-text">
+                    <div class="text-B24">在地服務｜強化品牌印象</div>
+                    <ul class="text-20">
+                        <li>建立記憶度高的品牌形象</li>
+                        <li>強化「地點 X 品牌」的專屬記憶點</li>
+                    </ul>
+                </span>
+            </figcaption>
+        </section>
+        <!-- 作品 -->
+        <section class="work">
+            <header class="feature">
+                <div class="text-B36">我們的作品</div>
+                <div class="text-20">每一個專案，都是一次視覺與策略的結晶</div>
+            </header>
+            <section class="work-pho">
+                <figure class="work-item">
+                    <img src="Photo.png">
+                    <div class="work-text">《Slow 慢日子》｜生活選物品牌識別設計</div>
+                </figure>
+                <figure class="work-item">
+                    <img src="Photo-1.png">
+                    <div class="work-text">《果日市集》｜電商品牌網站設計</div>
+                </figure>
+                <figure class="work-item">
+                    <img src="Photo-2.png">
+                    <div class="work-text">《島嶼呼吸 Island》｜瑜伽品牌形象設計</div>
+                </figure>
+            </section>
+            <div onmousedown="down(this);" onmouseup="up(this);" class="more">
+                <img src="arrow.png" width="18px" height="18px" style="margin:4px 8px 0 0;" />
+                了解更多
+            </div>
+        </section>
+        <!-- 結尾 -->
+         <footer class="coda-all">
+            <header class="feature" style="color:#ffffff;">
+                <div class="text-B36">關於我們</div>
+                <div class="text-20">我們是用設計說故事的人</div>
+            </header>
+            <div class="coda">
+                <img src="image.png" width="80%">
+                <div class="text-20">我們替品牌找到模樣，讓設計說出情感與故事，留下被記住的溫度與風景。</div>
+            </div>
+            <div onmousedown="Edown(this);" onmouseup="Eup(this);" class="coda-more">
+                <img src="arrow.png" width="18px" height="18px" style="margin:4px 8px 0 0;" />
+                了解更多
+            </div>
+        </footer>
+
+        <script>
+            function down(elem){
+                elem.style.backgroundColor="#2D8F3F";
+            }
+            function up(elem){
+                elem.style.backgroundColor="#166B12";
+            }
+            function menuClick(){
+                let menuPDiv=document.querySelector("#menuP");
+                let menuIDiv=document.querySelector("#menuI");
+                menuPDiv.style.display="none";
+                menuIDiv.style.display="block";
+            }
+            function closeClick(){
+                let menuPDiv=document.querySelector("#menuP");
+                let menuIDiv=document.querySelector("#menuI");
+                menuPDiv.style.display="block";
+                menuIDiv.style.display="none";
+            }
+            function switchBanner(n){
+                let bannerDiv=document.querySelector("#banner");
+                let banner2Div=document.querySelector("#banner2");
+                let switchDiv=document.querySelectorAll("#switch img");
+                if (n===1){
+                    bannerDiv.style.display="block";
+                    banner2Div.style.display="none";
+                    switchDiv[0].src="dot-full.png"
+                    switchDiv[1].src="dot.png"
+                }else{
+                    bannerDiv.style.display="none";
+                    banner2Div.style.display="block";
+                    switchDiv[0].src="dot.png"
+                    switchDiv[1].src="dot-full.png" 
+                }
+            }
+            function Edown(elem){
+                elem.style.backgroundColor="#2D8F3F";
+                elem.style.color="#ffffff";
+            }
+            function Eup(elem){
+                elem.style.backgroundColor="#ffffff";
+                elem.style.color="#166B12";
+            }
+        </script>
+    </body>
+</html>

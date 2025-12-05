@@ -1,0 +1,401 @@
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:13px 100px;
+
+}
+.desktop-menu{
+    display:flex;
+    justify-content:flex-end;
+    color:#094D11;
+    font-weight:bold;
+    font-size:20px;
+    gap:32px;
+}
+.menu-picture{
+    margin-left:50px;
+    display:none;
+    cursor:pointer;
+}
+.mobile-menu{
+    position:fixed; /* 浮在畫面上 */
+    top:0; right:0; /* 選單從右邊展開 */
+    width:40%; height:100vh;  /* width：;手機畫面右側 40%，height：讓選單滿高 */
+    z-index:1000;
+    background-color:#E0E0E0;
+    padding:32px 24px;
+}
+.item{
+    color:#094D11;
+    font-weight:bold;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.banner{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    position:relative; /* 讓文字選定這區塊*/
+}
+.banner-header{
+    position:absolute; /* 讓文字疊在圖片上*/
+    z-index:10;
+    display:flex;
+    flex-direction:column;
+    gap:48px;
+    color:#166B12;
+    margin-right:5%;
+}
+
+.text-spacing{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+.text-B40{
+    font-size:40px;
+    font-weight:bold;
+}
+.text-B36{
+    font-size:36px;
+    font-weight:bold;
+}
+.text-B24{
+    font-size:24px;
+    font-weight:bold;
+}
+.text-20{
+    font-size:20px;
+}
+.text-16{
+    font-size:16px;
+}
+
+.more{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#ffffff;
+    font-size:20px;
+    text-align:center;
+    width:157px;
+    padding:16px;
+    border-radius:8px;
+    background-color:#166B12;
+    cursor:pointer;
+}
+.switch{
+    position:absolute;
+    bottom:40px;
+    left:50%; transform:translateX(-50%);
+    line-height:0;
+    z-index:5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:auto;
+    gap:24px;
+    padding:8px 16px;
+    background-color:#FFFFFF;
+    border-radius:100px;
+    cursor:pointer;
+}
+.feature{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+    text-align:center;
+    color:#166B12;
+    margin:64px 0;
+
+}
+.obj{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    width:190px;
+    gap:8px;
+}
+.obj img{
+    width:140px;
+    height:140px;
+}
+.introduce{
+    display:flex;
+    justify-content:center;
+    gap:180px;
+    margin-top:64px;
+}
+
+
+.project-all{
+    display:flex;
+    flex-direction:column; /* 讓主軸方向(子元素)垂直置中，預設都是row水平 */
+    justify-content:center; /* column中：控制垂直 row中：控制水平*/
+    margin-top:64px;
+    background-color:#166B12;
+    color:#ffffff;
+    height:90%;
+    width:100%;
+    padding-bottom:24px;
+}
+.pro{
+    display:flex;
+    align-items:center;
+    gap:185px;
+}
+.pro-reverse{
+    display:flex;
+    align-items:center;
+    flex-direction:row-reverse; /* 反方向 */
+    gap:185px;
+}
+.pro-text{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:50%;
+    max-width:450px;
+}
+
+.work{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:100px;
+}
+.work-pho{
+    display:flex;
+    justify-content:center;
+    gap:32px;
+    cursor:pointer;
+}
+.work-item{
+    display:flex;
+    position:relative;
+    flex-direction:column;
+    align-items:center;
+    overflow:hidden; /* 讓 hover 下滑文字只在圖片框內顯示，防止跑版 */
+    width:393px;
+}
+.work-item img{
+    width:100%;
+    display:block; /* 清除 inline 圖片底部空白，避免跑版 */
+}
+.work-text{
+    font-size:20px;
+    color:#ffffff;
+    text-align:center;
+    padding:8px 0;
+    width:100%;
+    background-color:#166B12;
+    z-index:-10;
+    transform:translateY(-100%);
+    transition: all 0.3s ease;
+}
+.work-item:hover .work-text{
+    transform:translateY(0);
+}
+
+.coda{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    gap:50px;
+}
+.coda-more{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#166B12;
+    font-size:20px;
+    text-align:center;
+    width:157px;
+    padding:16px;
+    border-radius:8px;
+    background-color:#ffffff;
+    cursor:pointer;
+}
+.coda-all{
+    display:flex;
+    flex-direction:column; /* 讓主軸方向(子元素)垂直置中，預設都是row水平 */
+    justify-content:center; /* column中：控制垂直 row中：控制水平*/
+    align-items:center;
+    margin-top:64px;
+    gap:50px;
+    background-color:#166B12;
+    color:#ffffff;
+    height:90%;
+    width:100%;
+    padding-bottom:24px;
+}
+
+@media(max-width:1250px){
+    .desktop-menu{
+        margin-left:100px;
+    }
+    .text-B40{
+        font-size:24px;
+    }
+    .text-20{
+        font-size:16px;
+    }
+    .banner-header{
+        gap:36px;
+    }
+    .more{
+        font-size:16px;
+        width:90px;
+    }
+    .switch img {
+        width: 14px;
+        height: 14px;
+    }
+    .introduce{
+        flex-wrap:wrap;
+    }
+    .pro img, .pro-reverse img{
+        width:50%;
+    }
+    .pro-text{
+        width:50%;
+    }
+    .pro, .pro-reverse{
+        gap:5%;
+    }
+    .project-all{
+        height:8%;
+        padding-bottom:10px;
+    }
+}
+@media(max-width:500px){
+    .navbar{
+        margin:13px 32px 13px 32px;
+    }
+    .desktop-menu{
+        display:none;
+    }
+    .menu-picture{
+        display:block;
+    }
+    .item{
+        padding:32px 8px 32px 8px;
+    }
+    .text-spacing{
+        gap:4px;
+    }
+    .text-B40{
+        font-size:16px;
+    }
+    .text-20{
+        font-size:8px;
+    }
+    .banner-header{
+        gap:16px;
+    }
+    .more{
+        font-size:8px;
+        width:60px;
+        padding:8px;
+    }
+    .more img{
+        width:8px;
+        height:8px;
+        margin:4px 4px 0 0;
+    }
+    .switch{
+        gap:12px;
+        bottom:16px;
+        padding:4px 8px;
+    }
+    .switch img {
+        width: 8px;
+        height: 8px;
+        margin-right:0px;
+    }
+    .text-B36{
+        font-size:12px;
+    }
+    .feature{
+        margin:24px 0;
+    }
+    .text-B24{
+        font-size: 12px;
+    }
+    .text-16{
+        font-size:8px;
+    }
+    .obj{
+        width:100px;
+    }
+    .obj img{
+        width: 70px;
+        height: 70px;
+        margin-right:0px;
+    }
+    .introduce{
+        gap:60px;
+        margin-top:32px;
+    }
+    .project-all{
+        width:auto;
+        margin-top:24px;
+    }
+    .pro,.pro-reverse{
+        flex-direction:column;
+        align-items:center;
+        gap:8px;
+    }
+    .pro img, .pro-reverse img{
+        width:90%;
+        order:1; /* 圖片在上 */
+    }
+    .pro-text{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content:center;
+        text-align:left;
+        width:90%;
+        width:250px;
+        order:2;
+        margin:0;
+    }
+    .work{
+        gap:36px;
+    }
+    .work-item{
+        width:70%;
+    }
+    .work-text{
+        font-size:8px;
+        width:100%;
+    }
+    .work-pho{
+        flex-wrap:wrap;
+        margin:-5% 0;
+    }
+    .coda-all{
+        width:auto;
+        gap:24px;
+        margin-top:24px;
+    }
+    .coda{
+        gap:24px;
+    }
+    .coda-more{
+        font-size:8px;
+        width:60px;
+        padding:8px;
+    }
+    .coda-more img{
+        width:8px;
+        height:8px;
+        margin:4px 4px 0 0;
+    }
+}
