@@ -273,7 +273,7 @@
         padding-bottom:10px;
     }
 }
-@media(max-width:600px){
+@media(max-width:768px){
     .navbar{
         margin:13px 32px 13px 32px;
     }
