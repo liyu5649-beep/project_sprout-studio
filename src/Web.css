@@ -446,7 +446,7 @@
     width: 100px;
     height: 50px;
     font-size: 14px;
-    margin-top: 16px;
+    margin-top: 8px;
   }
   .more img,
   .more-light img {
@@ -534,7 +534,7 @@
   .more,
   .more-light {
     width: 60px;
-    height: 30px;
+    height: 25px;
     font-size: 8px;
     margin-top: 8px;
   }
@@ -551,6 +551,7 @@
   .dot {
     width: 6px;
     height: 6px;
+    border: 1px solid #166b12;
   }
   /* 服務特色 */
   .service-feature {
