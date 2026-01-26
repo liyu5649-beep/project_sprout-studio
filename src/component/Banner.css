@@ -34,6 +34,19 @@
   font-size: 20px;
   color: #166b12;
 }
+.fade-slide-in {
+  animation: fadeSlideIn 3s ease forwards;
+}
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .carousel {
   position: absolute;

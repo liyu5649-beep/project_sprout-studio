@@ -1,13 +1,31 @@
 import "./Project.css";
 import {projectCover1, projectCover2, projectCover3 } from "../assets/Image";
 import MoreBtn from "./MoreBtn";
+import { useEffect } from "react";
 
 function Project() {
   const projectData = [
     {img: projectCover1, name: "《Slow 慢日子》｜生活選物品牌識別設計"},
     {img: projectCover2, name: "《《果日市集》｜電商品牌網站設計"},
     {img: projectCover3, name: "《島嶼呼吸 Island》｜瑜伽品牌形象設計"}
-  ]
+  ];
+
+  useEffect(() => {
+    const items = document.querySelectorAll(".project-cover");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if(entry.isIntersecting){
+          entry.target.classList.add("fade-in");
+        };
+      });
+    },{
+      threshold: 0.5
+    });
+    items.forEach(item => observer.observe(item));
+    return () => {
+      items.forEach(item => observer.unobserve(item));
+    }
+  }, []);
 
   return (
     <section className="project">

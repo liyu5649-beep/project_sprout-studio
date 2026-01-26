@@ -1,5 +1,6 @@
 import "./ServiceFeature.css";
 import { serviceFeature1, serviceFeature2, serviceFeature3 } from "../assets/Image";
+import { useEffect } from "react";
 
 function ServiceFeature() {
     const ServiceData = [
@@ -7,6 +8,22 @@ function ServiceFeature() {
         {img: serviceFeature2, title: "跨領域整合", content: "結合品牌、網頁、社群視覺等多元設計服務，讓風格與體驗一致性發展。"},
         {img: serviceFeature3, title: "高效溝通", content: "使用專業專案管理工具，確保每一階段雙方都能清楚掌握與即時調整。"}
     ];
+
+    useEffect(() => {
+        const items = document.querySelectorAll(".feature-item");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add("fade-in");
+                }
+            });
+        },{
+            threshold: 0.5
+        });
+        items.forEach(item => observer.observe(item));
+        return () => items.forEach(item => observer.unobserve(item));
+    }, []);
 
     return <section className="service-feature">
         <header className="feature-head">

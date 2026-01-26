@@ -17,6 +17,14 @@
   width: 393px;
   height: auto;
   position: relative;
+
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.project-cover.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 .project-cover img {
   width: 100%;

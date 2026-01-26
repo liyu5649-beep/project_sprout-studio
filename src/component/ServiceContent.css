@@ -19,6 +19,14 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.content-item.fade-in, .content-item-reverse.fade-in {
+  opacity: 1;
+  transform: translateX(0);
 }
 .content-item img,
 .content-item-reverse img {
@@ -47,6 +55,10 @@
   align-items: center;
   justify-content: center;
   gap: 10%;
+
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 @media (max-width: 1000px) {

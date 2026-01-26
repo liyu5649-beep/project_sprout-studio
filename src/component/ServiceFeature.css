@@ -32,7 +32,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
+.feature-item.fade-in {
+  opacity: 1;
+  transform: translateY(0px);
+} 
 .feature-item img {
   width: 100%;
   height: auto;
@@ -46,6 +54,9 @@
   font-size: 16px;
   text-align: center;
 }
+
+
+
 @media (max-width: 1000px) {
     /* 服務特色 */
   .feature-list {
