@@ -1,0 +1,103 @@
+/* 服務內容 */
+.service-content {
+  width: 100%;
+  height: auto;
+  padding: 64px 0 25px 0;
+  background-color: #166b12;
+  color: white;
+}
+.content-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.content-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.content-item img,
+.content-item-reverse img {
+  width: 50%;
+  height: auto;
+}
+.content-item-text {
+  width: 50%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 10%;
+}
+.content-item-head {
+  font-size: 24px;
+  font-weight: bold;
+}
+.content-item-content {
+  font-size: 16px;
+  padding-left: 16px;
+}
+.content-item-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+@media (max-width: 1000px) {
+    /* 服務內容 */
+  .content-item-text {
+    gap: 10px;
+    padding-left: 8%;
+  }
+  .content-item-head {
+    font-size: 20px;
+  }
+  .content-item-content {
+    font-size: 14px;
+    padding-left: 16px;
+  }
+}
+@media (max-width: 700px) {
+    /* 服務內容 */
+  .service-content {
+    padding: 40px 0 25px 0;
+  }
+  .content-head {
+    margin-bottom: 40px;
+  }
+  .content-item img,
+  .content-item-reverse img {
+    width: 100%;
+  }
+  .content-item-reverse {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  .content-item-text {
+    width: auto;
+    padding: 0;
+    margin: 24px auto;
+  }
+}
+@media (max-width: 400px) {
+    /* 服務內容 */
+  .service-content {
+    padding: 24px 0 25px 0;
+  }
+  .content-head {
+    margin-bottom: 24px;
+  }
+  .content-item-head {
+    font-size: 16px;
+  }
+  .content-item-content {
+    font-size: 12px;
+    padding-left: 8px;
+  }
+}

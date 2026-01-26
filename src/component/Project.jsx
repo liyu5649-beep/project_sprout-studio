@@ -1,6 +1,14 @@
-import { arrow, projectCover1, projectCover2, projectCover3 } from "../assets/Image";
+import "./Project.css";
+import {projectCover1, projectCover2, projectCover3 } from "../assets/Image";
+import MoreBtn from "./MoreBtn";
 
 function Project() {
+  const projectData = [
+    {img: projectCover1, name: "《Slow 慢日子》｜生活選物品牌識別設計"},
+    {img: projectCover2, name: "《《果日市集》｜電商品牌網站設計"},
+    {img: projectCover3, name: "《島嶼呼吸 Island》｜瑜伽品牌形象設計"}
+  ]
+
   return (
     <section className="project">
       <header className="project-head">
@@ -10,29 +18,14 @@ function Project() {
         </div>
       </header>
       <div className="project-list">
-        <article className="project-cover">
-          <img src={projectCover1} />
-          <div className="project-name">
-            《Slow 慢日子》｜生活選物品牌識別設計
-          </div>
+        {projectData.map((item, index) => {
+          return <article className="project-cover" key={index}>
+          <img src={item.img} />
+          <div className="project-name">{item.name}</div>
         </article>
-        <article className="project-cover">
-          <img src={projectCover2} />
-          <div className="project-name">
-            《果日市集》｜電商品牌網站設計
-          </div>
-        </article>
-        <article className="project-cover">
-          <img src={projectCover3} />
-          <div className="project-name">
-            《島嶼呼吸 Island》｜瑜伽品牌形象設計
-          </div>
-        </article>
+        })}
       </div>
-      <button className="more">
-        <img src={arrow}/>
-        了解更多
-      </button>
+      <MoreBtn />
     </section>
   );
 }

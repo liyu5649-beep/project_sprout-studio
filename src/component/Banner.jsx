@@ -1,5 +1,7 @@
+import "./Banner.css";
 import { useEffect, useState } from "react";
 import { banner, banner2, arrow } from "../assets/Image";
+import MoreBtn from "./MoreBtn";
 
 
 function Banner() {
@@ -22,10 +24,7 @@ function Banner() {
         <div className="banner-content">
             <div className="banner-head">打造專屬你的視覺識別</div>
             <p className="banner-text">我們專注於品牌設計、網頁設計與視覺策略，讓每一個創意都有價值</p>
-            <button className="more">
-                <img src={arrow}/>
-                了解更多
-            </button>
+            <MoreBtn />
         </div>
         <div className="carousel">
             {banners.map((_, index) => (

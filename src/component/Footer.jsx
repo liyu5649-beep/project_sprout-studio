@@ -1,3 +1,4 @@
+import "./Footer.css";
 import { arrow, footer } from "../assets/Image";
 
 function Footer() {

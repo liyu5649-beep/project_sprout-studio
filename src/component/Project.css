@@ -1,0 +1,70 @@
+/* 專案作品 */
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 64px auto;
+}
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.project-cover {
+  width: 393px;
+  height: auto;
+  position: relative;
+}
+.project-cover img {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+}
+.project-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 46px;
+  background-color: #166b12;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+.project-cover:hover .project-name {
+  transform: translateY(90%);
+}
+
+@media (max-width: 1000px) {
+    /* 專案作品 */
+  .project-list {
+    gap: 64px;
+  }
+  .project-cover {
+    width: 350px;
+  }
+  .project-name {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+    /* 專案作品 */
+  .project-list {
+    gap: 64px;
+  }
+  .project-cover {
+    width: 300px;
+  }
+  .project-name {
+    font-size: 16px;
+  }
+}

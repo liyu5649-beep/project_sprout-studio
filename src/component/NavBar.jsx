@@ -1,3 +1,4 @@
+import "./NavBar.css";
 import { useState } from "react";
 import {logo} from "../assets/Image.js"
 import { RiMenuAddFill, RiCloseLargeFill } from "react-icons/ri";

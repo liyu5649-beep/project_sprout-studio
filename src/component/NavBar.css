@@ -1,0 +1,94 @@
+/* 導覽列 */
+.navbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 100px;
+  box-shadow: 0 5px 5px rgb(0, 0, 0, 0.15);
+}
+.navbar img {
+  width: auto;
+  height: 40px;
+  cursor: pointer;
+}
+.navbar-menu-desktop {
+  display: inline-flex;
+  gap: 32px;
+}
+.navbar-item {
+  font-size: 20px;
+  font-weight: bold;
+  color: #094d11;
+  cursor: pointer;
+}
+.navbar-toggle {
+  width: auto;
+  height: 40px;
+  display: none;
+  cursor: pointer;
+}
+.navbar-closeBT {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.navbar-menu-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #dedebe;
+  box-shadow: -5px 0 5px rgb(0, 0, 0, 0.15);
+  z-index: 100;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+}
+.navbar-menu-mobile--open {
+  transform: translateX(0);
+}
+.navbar-list {
+  position: absolute;
+  top: 70px;
+  left: 16px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+@media (max-width: 1000px) {
+  /* 導覽列 */
+  .navbar-menu-desktop {
+    display: none;
+  }
+  .navbar-toggle {
+    display: inline-flex;
+  }
+  .navbar {
+    padding: 13px 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* 導覽列 */
+  .navbar {
+    padding: 13px 24px;
+  }
+  .navbar img {
+    height: 24px;
+  }
+  .navbar-toggle {
+    height: 24px;
+  }
+  .navbar-item {
+    font-size: 16px;
+  }
+}
