@@ -1,6 +1,6 @@
 import "./Banner.css";
 import { useEffect, useState } from "react";
-import { banner, banner2, arrow } from "../assets/Image";
+import { banner, banner2} from "../assets/Image";
 import MoreBtn from "./MoreBtn";
 
 
