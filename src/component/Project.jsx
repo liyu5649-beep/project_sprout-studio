@@ -38,7 +38,7 @@ function Project() {
       <div className="project-list">
         {projectData.map((item, index) => {
           return <article className="project-cover" key={index}>
-          <img src={item.img} />
+          <img src={item.img} alt="專案作品圖" loading="lazy"/>
           <div className="project-name">{item.name}</div>
         </article>
         })}

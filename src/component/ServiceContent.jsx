@@ -37,7 +37,7 @@ function ServiceContent() {
         const isReverse = index % 2 === 1;
 
         return <article className={isReverse ? "content-item-reverse" : "content-item"} key={index}>
-        <img src={item.img} />
+        <img src={item.img} alt="服務內容示意圖" loading="lazy"/>
         <div className="content-item-text">
           <div className="content-item-head">{item.title}</div>
           <ul className="content-item-content">

@@ -33,7 +33,7 @@ function ServiceFeature() {
         <div className="feature-list">
             {ServiceData.map((item, index) => {
                 return <article className="feature-item" key={index}>
-                    <img src={item.img} />
+                    <img src={item.img} alt="服務特色圖片" loading="lazy"/>
                     <div className="feature-item-head">{item.title}</div>
                     <p className="feature-item-content">{item.content}</p>
                 </article>

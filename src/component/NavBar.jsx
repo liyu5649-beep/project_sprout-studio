@@ -16,7 +16,7 @@ function NavBar() {
     };
 
     return <header className="navbar">
-        <img src={logo}/>
+        <img src={logo} alt="logo" fetchPriority="high"/>
         <nav className="navbar-menu-desktop">
             <p className="navbar-item">設計作品</p>
             <p className="navbar-item">服務項目</p>
