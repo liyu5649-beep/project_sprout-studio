@@ -6,7 +6,7 @@ import dotFull from "./dotfull.png";
 import dot from "./dot.png";
 import projectCover1 from "./projectCover1-393.webp";
 import projectCover2 from "./projectCover2-393.webp";
-import projectCover3 from "./projectCover3-w9w.webp";
+import projectCover3 from "./projectCover3-393.webp";
 import serviceContent1 from "./serviceContent1-753.webp";
 import serviceContent2 from "./serviceContent2-753.webp";
 import serviceContent3 from "./serviceContent3-753.webp";
